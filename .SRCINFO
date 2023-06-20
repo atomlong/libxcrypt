@@ -1,0 +1,20 @@
+pkgbase = libxcrypt
+	pkgdesc = Modern library for one-way hashing of passwords
+	pkgver = 4.4.35
+	pkgrel = 1
+	url = https://github.com/besser82/libxcrypt/
+	install = libxcrypt.install
+	arch = x86_64
+	license = LGPL
+	provides = libcrypt.so
+	source = https://github.com/besser82/libxcrypt//releases/download/v4.4.35/libxcrypt-4.4.35.tar.xz
+	source = https://github.com/besser82/libxcrypt//releases/download/v4.4.35/libxcrypt-4.4.35.tar.xz.asc
+	validpgpkeys = 678CE3FEE430311596DB8C16F52E98007594C21D
+	sha256sums = a8c935505b55f1df0d17f8bfd59468c7c6709a1d31831b0f8e3e045ab8fd455d
+	sha256sums = SKIP
+
+pkgname = libxcrypt
+
+pkgname = libxcrypt-compat
+	pkgdesc = Modern library for one-way hashing of passwords - legacy API functions
+	depends = libxcrypt
